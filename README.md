@@ -1,5 +1,5 @@
 # boring.cyclesLAOCII
-### 3-cycles, 9bits instructions, 16bits data microprocessor for a course assignment.
+### 3-cycles, 9bits instructions, 16bits data microprocessor with data inputs(DINs) for a course assignment and fpga testing.
 ## ISA and flag, IIIXXXYYY 9 bits
 	000 - mv  regx, regy       rb[XXX] ← [rb[YYY]]  
 		cc0:
