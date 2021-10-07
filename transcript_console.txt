@@ -1,0 +1,412 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+vlog -reportprogress 300 -work work C:/Users/ofzbo/Documents/projects/QuartusII_Altera/_aocII_Pratica2/_aocII_Pratica2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Multiplexer3x2
+# -- Compiling module Multiplexer16x4
+# -- Compiling module _aocII_Pratica2
+# -- Scanning library directory 'C:/Users/ofzbo/Documents/projects/QuartusII_Altera/_aocII_Pratica2'
+# 
+# Referenced (but uncompiled) modules or primitives:
+# 	ProgramCounter
+# 	ProgramMemory
+# 	CtrlUnit
+# 	RegisterA
+# 	RegisterG
+# 	RegistersBank
+# 	ArithmeticLogicalUnit
+# 
+# Top level modules:
+# 	_aocII_Pratica2
+vlog -reportprogress 30 -work work C:/Users/ofzbo/Documents/projects/QuartusII_Altera/_aocII_Pratica2/ArithmeticLogicalUnit.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ArithmeticLogicalUnit
+# 
+# Top level modules:
+# 	ArithmeticLogicalUnit
+vlog -reportprogress 30 -work work C:/Users/ofzbo/Documents/projects/QuartusII_Altera/_aocII_Pratica2/CtrlUnit.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module CtrlUnit
+# 
+# Top level modules:
+# 	CtrlUnit
+vlog -reportprogress 30 -work work C:/Users/ofzbo/Documents/projects/QuartusII_Altera/_aocII_Pratica2/ProgramCounter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ProgramCounter
+# 
+# Top level modules:
+# 	ProgramCounter
+vlog -reportprogress 30 -work work C:/Users/ofzbo/Documents/projects/QuartusII_Altera/_aocII_Pratica2/ProgramMemory.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ProgramMemory
+# 
+# Top level modules:
+# 	ProgramMemory
+vlog -reportprogress 30 -work work C:/Users/ofzbo/Documents/projects/QuartusII_Altera/_aocII_Pratica2/RegisterA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegisterA
+# 
+# Top level modules:
+# 	RegisterA
+vlog -reportprogress 30 -work work C:/Users/ofzbo/Documents/projects/QuartusII_Altera/_aocII_Pratica2/RegisterG.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegisterG
+# 
+# Top level modules:
+# 	RegisterG
+vlog -reportprogress 30 -work work C:/Users/ofzbo/Documents/projects/QuartusII_Altera/_aocII_Pratica2/RegistersBank.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module RegistersBank
+# 
+# Top level modules:
+# 	RegistersBank
+vsim work._aocII_Pratica2
+# vsim work._aocII_Pratica2 
+# Loading work._aocII_Pratica2
+# Loading work.ProgramCounter
+# Loading work.ProgramMemory
+# Loading work.CtrlUnit
+# Loading work.RegisterA
+# Loading work.RegisterG
+# Loading work.Multiplexer3x2
+# Loading work.RegistersBank
+# Loading work.Multiplexer16x4
+# Loading work.ArithmeticLogicalUnit
+force -freeze sim:/_aocII_Pratica2/clk 1 0, 0 {5 ps} -r 10
+force -freeze sim:/_aocII_Pratica2/rst 0 0
+add wave -position end  sim:/_aocII_Pratica2/TESTING_direct_input
+add wave -position end  sim:/_aocII_Pratica2/alu_data_in_a
+add wave -position end  sim:/_aocII_Pratica2/alu_data_in_b
+add wave -position end  sim:/_aocII_Pratica2/alu_data_out
+add wave -position end  sim:/_aocII_Pratica2/alu_wrap_around
+add wave -position end  sim:/_aocII_Pratica2/bus
+add wave -position end  sim:/_aocII_Pratica2/cc
+add wave -position end  sim:/_aocII_Pratica2/clk
+add wave -position end  sim:/_aocII_Pratica2/ctrlu_a_reg_write
+add wave -position end  sim:/_aocII_Pratica2/ctrlu_alu_opcode
+add wave -position end  sim:/_aocII_Pratica2/ctrlu_bus_sel
+add wave -position end  sim:/_aocII_Pratica2/ctrlu_g_reg_write
+add wave -position end  sim:/_aocII_Pratica2/ctrlu_inst
+add wave -position end  sim:/_aocII_Pratica2/ctrlu_instDone
+add wave -position end  sim:/_aocII_Pratica2/ctrlu_rb_read_in_sel
+add wave -position end  sim:/_aocII_Pratica2/ctrlu_rb_write
+add wave -position end  sim:/_aocII_Pratica2/ctrlu_regx
+add wave -position end  sim:/_aocII_Pratica2/ctrlu_regy
+add wave -position end  sim:/_aocII_Pratica2/ctrlu_step
+add wave -position end  sim:/_aocII_Pratica2/direct_input
+add wave -position end  sim:/_aocII_Pratica2/fool16bits
+add wave -position end  sim:/_aocII_Pratica2/ic
+add wave -position end  sim:/_aocII_Pratica2/pc_out
+add wave -position end  sim:/_aocII_Pratica2/pm_address
+add wave -position end  sim:/_aocII_Pratica2/pm_data_out
+add wave -position end  sim:/_aocII_Pratica2/rb_data_in
+add wave -position end  sim:/_aocII_Pratica2/rb_data_out
+add wave -position end  sim:/_aocII_Pratica2/rb_read_sel
+add wave -position end  sim:/_aocII_Pratica2/rb_write
+add wave -position end  sim:/_aocII_Pratica2/reg_a_data_in
+add wave -position end  sim:/_aocII_Pratica2/reg_a_data_out
+add wave -position end  sim:/_aocII_Pratica2/reg_a_write
+add wave -position end  sim:/_aocII_Pratica2/reg_g_data_in
+add wave -position end  sim:/_aocII_Pratica2/reg_g_data_out
+add wave -position end  sim:/_aocII_Pratica2/reg_g_write
+add wave -position end  sim:/_aocII_Pratica2/rst
+add wave -position end  sim:/_aocII_Pratica2/step
+run
+# rb: '{x, x, x, x, x, x, x, x}
+# cc:           x ic:           x inst: xxxxxxxxx step: xx DIN: xxxxxxxxxxxxxxxx
+# rb_out: xxxxxxxxxxxxxxxx reg_a: xxxxxxxxxxxxxxxx reg_g: xxxxxxxxxxxxxxxx
+# alu_out: xxxxxxxxxxxxxxxx (wa: x)
+#  rb_write: x bus: xxxxxxxxxxxxxxxx (sel: xx)
+# 
+# 
+# rb: '{0, 0, 0, 0, 0, 0, 0, 0}
+# cc:           0 ic:           0 inst: 001000000 step: 00 DIN: 0000000000000010
+# rb_out: 0000000000000000 reg_a: 0000000000000000 reg_g: 0000000000000000
+# alu_out: 0000000000000000 (wa: 0)
+#  rb_write: 1 bus: 0000000000000010 (sel: 01)
+# 
+# 
+# rb: '{2, 0, 0, 0, 0, 0, 0, 0}
+# cc:           1 ic:           1 inst: 001001000 step: 00 DIN: 0000000000000011
+# rb_out: 0000000000000000 reg_a: 0000000000000000 reg_g: 0000000000000000
+# alu_out: 0000000000000000 (wa: 0)
+#  rb_write: 1 bus: 0000000000000011 (sel: 01)
+# 
+# 
+# rb: '{2, 3, 0, 0, 0, 0, 0, 0}
+# cc:           2 ic:           2 inst: 010001000 step: 00 DIN: 0000000000000011
+# rb_out: 0000000000000011 reg_a: 0000000000000000 reg_g: 0000000000000000
+# alu_out: 0000000000000011 (wa: 0)
+#  rb_write: 0 bus: 0000000000000011 (sel: 00)
+# 
+# 
+# rb: '{2, 3, 0, 0, 0, 0, 0, 0}
+# cc:           3 ic:           2 inst: 010001000 step: 01 DIN: 0000000000000011
+# rb_out: 0000000000000010 reg_a: 0000000000000011 reg_g: 0000000000000000
+# alu_out: 0000000000000101 (wa: 0)
+#  rb_write: 0 bus: 0000000000000010 (sel: 00)
+# 
+# 
+# rb: '{2, 3, 0, 0, 0, 0, 0, 0}
+# cc:           4 ic:           2 inst: 010001000 step: 10 DIN: 0000000000000011
+# rb_out: 0000000000000011 reg_a: 0000000000000011 reg_g: 0000000000000101
+# alu_out: 0000000000001000 (wa: 0)
+#  rb_write: 1 bus: 0000000000000101 (sel: 10)
+# 
+# 
+# rb: '{2, 5, 0, 0, 0, 0, 0, 0}
+# cc:           5 ic:           3 inst: 001010000 step: 00 DIN: 0000000000000110
+# rb_out: 0000000000000000 reg_a: 0000000000000011 reg_g: 0000000000000101
+# alu_out: 0000000000000000 (wa: 0)
+#  rb_write: 1 bus: 0000000000000110 (sel: 01)
+# 
+# 
+# rb: '{2, 5, 6, 0, 0, 0, 0, 0}
+# cc:           6 ic:           4 inst: 011010001 step: 00 DIN: 0000000000000110
+# rb_out: 0000000000000110 reg_a: 0000000000000011 reg_g: 0000000000000101
+# alu_out: 1111111111111101 (wa: 1)
+#  rb_write: 0 bus: 0000000000000110 (sel: 00)
+# 
+# 
+# rb: '{2, 5, 6, 0, 0, 0, 0, 0}
+# cc:           7 ic:           4 inst: 011010001 step: 01 DIN: 0000000000000110
+# rb_out: 0000000000000101 reg_a: 0000000000000110 reg_g: 0000000000000101
+# alu_out: 0000000000000001 (wa: 0)
+#  rb_write: 0 bus: 0000000000000101 (sel: 00)
+# 
+# 
+# rb: '{2, 5, 6, 0, 0, 0, 0, 0}
+# cc:           8 ic:           4 inst: 011010001 step: 10 DIN: 0000000000000110
+# rb_out: 0000000000000110 reg_a: 0000000000000110 reg_g: 0000000000000001
+# alu_out: 0000000000000101 (wa: 0)
+#  rb_write: 1 bus: 0000000000000001 (sel: 10)
+# 
+# 
+# rb: '{2, 5, 1, 0, 0, 0, 0, 0}
+# cc:           9 ic:           5 inst: 000011010 step: 00 DIN: 0000000000000110
+# rb_out: 0000000000000001 reg_a: 0000000000000110 reg_g: 0000000000000001
+# alu_out: 0000000000000000 (wa: 0)
+#  rb_write: 1 bus: 0000000000000001 (sel: 00)
+# 
+# 
+# rb: '{2, 5, 1, 1, 0, 0, 0, 0}
+# cc:          10 ic:           6 inst: 010000011 step: 00 DIN: 0000000000000110
+# rb_out: 0000000000000010 reg_a: 0000000000000110 reg_g: 0000000000000001
+# alu_out: 0000000000001000 (wa: 0)
+#  rb_write: 0 bus: 0000000000000010 (sel: 00)
+# 
+# 
+# rb: '{2, 5, 1, 1, 0, 0, 0, 0}
+# cc:          11 ic:           6 inst: 010000011 step: 01 DIN: 0000000000000110
+# rb_out: 0000000000000001 reg_a: 0000000000000010 reg_g: 0000000000000001
+# alu_out: 0000000000000011 (wa: 0)
+#  rb_write: 0 bus: 0000000000000001 (sel: 00)
+# 
+# 
+# rb: '{2, 5, 1, 1, 0, 0, 0, 0}
+# cc:          12 ic:           6 inst: 010000011 step: 10 DIN: 0000000000000110
+# rb_out: 0000000000000010 reg_a: 0000000000000010 reg_g: 0000000000000011
+# alu_out: 0000000000000101 (wa: 0)
+#  rb_write: 1 bus: 0000000000000011 (sel: 10)
+# 
+# 
+# rb: '{3, 5, 1, 1, 0, 0, 0, 0}
+# cc:          13 ic:           7 inst: 100001000 step: 00 DIN: 0000000000000110
+# rb_out: 0000000000000101 reg_a: 0000000000000010 reg_g: 0000000000000011
+# alu_out: 0000000000000111 (wa: 0)
+#  rb_write: 0 bus: 0000000000000101 (sel: 00)
+# 
+# 
+# rb: '{3, 5, 1, 1, 0, 0, 0, 0}
+# cc:          14 ic:           7 inst: 100001000 step: 01 DIN: 0000000000000110
+# rb_out: 0000000000000011 reg_a: 0000000000000101 reg_g: 0000000000000011
+# alu_out: 0000000000000111 (wa: 0)
+#  rb_write: 0 bus: 0000000000000011 (sel: 00)
+# 
+# 
+# rb: '{3, 5, 1, 1, 0, 0, 0, 0}
+# cc:          15 ic:           7 inst: 100001000 step: 10 DIN: 0000000000000110
+# rb_out: 0000000000000101 reg_a: 0000000000000101 reg_g: 0000000000000111
+# alu_out: 0000000000000111 (wa: 0)
+#  rb_write: 1 bus: 0000000000000111 (sel: 10)
+# 
+# 
+# rb: '{3, 7, 1, 1, 0, 0, 0, 0}
+# cc:          16 ic:           8 inst: 011001000 step: 00 DIN: 0000000000000110
+# rb_out: 0000000000000111 reg_a: 0000000000000101 reg_g: 0000000000000111
+# alu_out: 1111111111111110 (wa: 1)
+#  rb_write: 0 bus: 0000000000000111 (sel: 00)
+# 
+# 
+# rb: '{3, 7, 1, 1, 0, 0, 0, 0}
+# cc:          17 ic:           8 inst: 011001000 step: 01 DIN: 0000000000000110
+# rb_out: 0000000000000011 reg_a: 0000000000000111 reg_g: 0000000000000111
+# alu_out: 0000000000000100 (wa: 0)
+#  rb_write: 0 bus: 0000000000000011 (sel: 00)
+# 
+# 
+# rb: '{3, 7, 1, 1, 0, 0, 0, 0}
+# cc:          18 ic:           8 inst: 011001000 step: 10 DIN: 0000000000000110
+# rb_out: 0000000000000111 reg_a: 0000000000000111 reg_g: 0000000000000100
+# alu_out: 0000000000000011 (wa: 0)
+#  rb_write: 1 bus: 0000000000000100 (sel: 10)
+# 
+# 
+# rb: '{3, 4, 1, 1, 0, 0, 0, 0}
+# cc:          19 ic:           9 inst: 010001011 step: 00 DIN: 0000000000000110
+# rb_out: 0000000000000100 reg_a: 0000000000000111 reg_g: 0000000000000100
+# alu_out: 0000000000001011 (wa: 0)
+#  rb_write: 0 bus: 0000000000000100 (sel: 00)
+# 
+# 
+# rb: '{3, 4, 1, 1, 0, 0, 0, 0}
+# cc:          20 ic:           9 inst: 010001011 step: 01 DIN: 0000000000000110
+# rb_out: 0000000000000001 reg_a: 0000000000000100 reg_g: 0000000000000100
+# alu_out: 0000000000000101 (wa: 0)
+#  rb_write: 0 bus: 0000000000000001 (sel: 00)
+# 
+# 
+# rb: '{3, 4, 1, 1, 0, 0, 0, 0}
+# cc:          21 ic:           9 inst: 010001011 step: 10 DIN: 0000000000000110
+# rb_out: 0000000000000100 reg_a: 0000000000000100 reg_g: 0000000000000101
+# alu_out: 0000000000001001 (wa: 0)
+#  rb_write: 1 bus: 0000000000000101 (sel: 10)
+# 
+# 
+# rb: '{3, 5, 1, 1, 0, 0, 0, 0}
+# cc:          22 ic:          10 inst: 110001011 step: 00 DIN: 0000000000000110
+# rb_out: 0000000000000101 reg_a: 0000000000000100 reg_g: 0000000000000101
+# alu_out: 0000000010000000 (wa: 0)
+#  rb_write: 0 bus: 0000000000000101 (sel: 00)
+# 
+# 
+# rb: '{3, 5, 1, 1, 0, 0, 0, 0}
+# cc:          23 ic:          10 inst: 110001011 step: 01 DIN: 0000000000000110
+# rb_out: 0000000000000001 reg_a: 0000000000000101 reg_g: 0000000000000101
+# alu_out: 0000000000001010 (wa: 0)
+#  rb_write: 0 bus: 0000000000000001 (sel: 00)
+# 
+# 
+# rb: '{3, 5, 1, 1, 0, 0, 0, 0}
+# cc:          24 ic:          10 inst: 110001011 step: 10 DIN: 0000000000000110
+# rb_out: 0000000000000101 reg_a: 0000000000000101 reg_g: 0000000000001010
+# alu_out: 0001010000000000 (wa: 0)
+#  rb_write: 1 bus: 0000000000001010 (sel: 10)
+# 
+# 
+# rb: '{3, 10, 1, 1, 0, 0, 0, 0}
+# cc:          25 ic:          11 inst: 111001011 step: 00 DIN: 0000000000000110
+# rb_out: 0000000000001010 reg_a: 0000000000000101 reg_g: 0000000000001010
+# alu_out: 0000000000000000 (wa: 0)
+#  rb_write: 0 bus: 0000000000001010 (sel: 00)
+# 
+# 
+# rb: '{3, 10, 1, 1, 0, 0, 0, 0}
+# cc:          26 ic:          11 inst: 111001011 step: 01 DIN: 0000000000000000
+# rb_out: 0000000000000001 reg_a: 0000000000001010 reg_g: 0000000000001010
+# alu_out: 0000000000000101 (wa: 0)
+#  rb_write: 0 bus: 0000000000000001 (sel: 00)
+# 
+# 
+# rb: '{3, 10, 1, 1, 0, 0, 0, 0}
+# cc:          27 ic:          11 inst: 111001011 step: 10 DIN: 0000000000000000
+# rb_out: 0000000000001010 reg_a: 0000000000001010 reg_g: 0000000000000101
+# alu_out: 0000000000000000 (wa: 0)
+#  rb_write: 1 bus: 0000000000000101 (sel: 10)
+# 
+# 
+# rb: '{3, 5, 1, 1, 0, 0, 0, 0}
+# cc:          28 ic:          12 inst: 001000000 step: 00 DIN: 0000000000000000
+# rb_out: 0000000000000011 reg_a: 0000000000001010 reg_g: 0000000000000101
+# alu_out: 0000000000000000 (wa: 0)
+#  rb_write: 1 bus: 0000000000000000 (sel: 01)
+# 
+# 
+# rb: '{0, 5, 1, 1, 0, 0, 0, 0}
+# cc:          29 ic:          13 inst: 101000001 step: 00 DIN: 0000000000000000
+# rb_out: 0000000000000000 reg_a: 0000000000001010 reg_g: 0000000000000101
+# alu_out: 0000000000000000 (wa: 0)
+#  rb_write: 0 bus: 0000000000000000 (sel: 00)
+# 
+# 
+# rb: '{0, 5, 1, 1, 0, 0, 0, 0}
+# cc:          30 ic:          13 inst: 101000001 step: 01 DIN: 0000000000000000
+# rb_out: 0000000000000101 reg_a: 0000000000000000 reg_g: 0000000000000101
+# alu_out: 0000000000000001 (wa: 0)
+#  rb_write: 0 bus: 0000000000000101 (sel: 00)
+# 
+# 
+# rb: '{0, 5, 1, 1, 0, 0, 0, 0}
+# cc:          31 ic:          13 inst: 101000001 step: 10 DIN: 0000000000000000
+# rb_out: 0000000000000000 reg_a: 0000000000000000 reg_g: 0000000000000001
+# alu_out: 0000000000000001 (wa: 0)
+#  rb_write: 1 bus: 0000000000000001 (sel: 10)
+# 
+# 
+# rb: '{1, 5, 1, 1, 0, 0, 0, 0}
+# cc:          32 ic:          14 inst: 101001001 step: 00 DIN: 0000000000000000
+# rb_out: 0000000000000101 reg_a: 0000000000000000 reg_g: 0000000000000001
+# alu_out: 0000000000000001 (wa: 0)
+#  rb_write: 0 bus: 0000000000000101 (sel: 00)
+# 
+# 
+# rb: '{1, 5, 1, 1, 0, 0, 0, 0}
+# cc:          33 ic:          14 inst: 101001001 step: 01 DIN: 0000000000000000
+# rb_out: 0000000000000101 reg_a: 0000000000000101 reg_g: 0000000000000001
+# alu_out: 0000000000000000 (wa: 0)
+#  rb_write: 0 bus: 0000000000000101 (sel: 00)
+# 
+# 
+# rb: '{1, 5, 1, 1, 0, 0, 0, 0}
+# cc:          34 ic:          14 inst: 101001001 step: 10 DIN: 0000000000000000
+# rb_out: 0000000000000101 reg_a: 0000000000000101 reg_g: 0000000000000000
+# alu_out: 0000000000000000 (wa: 0)
+#  rb_write: 1 bus: 0000000000000000 (sel: 10)
+# 
+# 
+# rb: '{1, 0, 1, 1, 0, 0, 0, 0}
+# cc:          35 ic:          15 inst: 010000011 step: 00 DIN: 0000000000000000
+# rb_out: 0000000000000001 reg_a: 0000000000000101 reg_g: 0000000000000000
+# alu_out: 0000000000000110 (wa: 0)
+#  rb_write: 0 bus: 0000000000000001 (sel: 00)
+# 
+# 
+# rb: '{1, 0, 1, 1, 0, 0, 0, 0}
+# cc:          36 ic:          15 inst: 010000011 step: 01 DIN: 0000000000000000
+# rb_out: 0000000000000001 reg_a: 0000000000000001 reg_g: 0000000000000000
+# alu_out: 0000000000000010 (wa: 0)
+#  rb_write: 0 bus: 0000000000000001 (sel: 00)
+# 
+# 
+# rb: '{1, 0, 1, 1, 0, 0, 0, 0}
+# cc:          37 ic:          15 inst: 010000011 step: 10 DIN: 0000000000000000
+# rb_out: 0000000000000001 reg_a: 0000000000000001 reg_g: 0000000000000010
+# alu_out: 0000000000000011 (wa: 0)
+#  rb_write: 1 bus: 0000000000000010 (sel: 10)
+# 
+# 
+# rb: '{2, 0, 1, 1, 0, 0, 0, 0}
+# cc:          38 ic:          16 inst: 010001010 step: 00 DIN: 0000000000000000
+# rb_out: 0000000000000000 reg_a: 0000000000000001 reg_g: 0000000000000010
+# alu_out: 0000000000000001 (wa: 0)
+#  rb_write: 0 bus: 0000000000000000 (sel: 00)
+# 
+# 
+# rb: '{2, 0, 1, 1, 0, 0, 0, 0}
+# cc:          39 ic:          16 inst: 010001010 step: 01 DIN: 0000000000000000
+# rb_out: 0000000000000001 reg_a: 0000000000000000 reg_g: 0000000000000010
+# alu_out: 0000000000000001 (wa: 0)
+#  rb_write: 0 bus: 0000000000000001 (sel: 00)
+# 
+# 
+# rb: '{2, 0, 1, 1, 0, 0, 0, 0}
+# cc:          40 ic:          16 inst: 010001010 step: 10 DIN: 0000000000000000
+# rb_out: 0000000000000000 reg_a: 0000000000000000 reg_g: 0000000000000001
+# alu_out: 0000000000000001 (wa: 0)
+#  rb_write: 1 bus: 0000000000000001 (sel: 10)
+# 
+# 
+# rb: '{2, 1, 1, 1, 0, 0, 0, 0}
+# cc:          41 ic:          17 inst: xxxxxxxxx step: 00 DIN: 0000000000000000
+# rb_out: xxxxxxxxxxxxxxxx reg_a: 0000000000000000 reg_g: 0000000000000001
+# alu_out: 0000000000000000 (wa: 0)
+#  rb_write: 1 bus: 0000000000000001 (sel: 10)
